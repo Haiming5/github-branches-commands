@@ -1,0 +1,14 @@
+fast-forward merging: 
+- master branch did not have any new commit sicne the moment we copy it to 
+other branches. At the end, there are two ways for master branch to fast-forward merge 
+with other feature branches. 
+The first one is using git merge <feature branch>, this will copy 
+all commits from feature branch to the master branch, result in as many 
+extra branches from feature branch inside master branch.
+
+The second one is git merge --squash <feature branch>, by doing so, master 
+branch will only stage the latest commit from feature branch and we need to 
+commit these new changes inside master branch ourselves. The differnce is 
+that merge --squash will only combine all the newest states from feature branch, 
+and therefore there will be only one new commit(latest commit from feature branch) 
+appears in the master branch. 
