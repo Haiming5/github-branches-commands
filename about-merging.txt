@@ -12,3 +12,14 @@ commit these new changes inside master branch ourselves. The differnce is
 that merge --squash will only combine all the newest states from feature branch, 
 and therefore there will be only one new commit(latest commit from feature branch) 
 appears in the master branch. 
+
+
+
+Recursive merge:
+- recursive merge gets used when master branch get updated as well after the time 
+when feature branch is made out of it. 
+- The difference is that it will create an extra commit in the log and if you want to 
+reset the commit, you only need to go back 1 commit instead of n, n being how many 
+steps is the feature branch away from you. 
+- We can also use git merge --squash in recursive merge. We need to commit our changes
+after merge --squash just like in fast-forward merging. 
