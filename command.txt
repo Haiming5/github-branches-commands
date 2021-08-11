@@ -1,0 +1,43 @@
+
+git status: checking staging state.
+
+git log: display all commits.
+
+git ls-files: checking all staged files. 
+
+git checkout <commit id>: checkout commit jumped to that commit. (detached head)
+
+git branch <branchname>: create a new branch. 
+
+git switch <branchname>: create a new branch.
+
+git rm <filename>: after adding the file to the stage, you need to remove it from the git. 
+
+git restore <filename>: undoing unstaged changes while the file was tracked already.
+
+git switch -c <branchname>: create a new branch and go to that branch. 
+
+git clean -dn: tells you which files are untracked. 
+
+git clean -df: delete all files that are not tracked. 
+
+git restore --staged <filename>: undo the change that are already tracked but not committed yet. if you want to delete the change, run 
+git checkout <filename>. 
+
+git reset --soft HEAD~1: we go back 1 commit before, this will only delete commit but the file is still staged. 
+
+git reset HEAD~1: commit will be deleted and the file will be removed from staging area as well. (we need to add <filename> if we want to add it).
+
+git reset --hard HAED~1: go back 1 commit, delete last 1 commit. It also removes from staging area and inside your working directory. 
+
+git merge <branchname>: merge <branchname> to the branch you are in. 
+
+
+git reflog: shows list of all deleted commits in the last 30 days. if you want 
+to go back to that stage. use git reset --hard <id> to jump back to the point. 
+That means that the file on that point will be added to the current branch. 
+No new branch is made. 
+
+
+git branch -D <branchname>: delete a branch even though it's not merged.
+
