@@ -39,10 +39,24 @@ That means that the file on that point will be added to the current branch.
 No new branch is made. 
 
 
-git branch -D <branchname>: delete a branch even though it's not merged.
+git branch -D <branchname>: delete a local branch even though it's not merged.
 
 
-git branch --track <branchname> origin/<branchname>: create local tracking branch
+git branch --track <branchname> origin/<branchname>: create local tracking branch.
+
+git brach -a: track all local branches.
+
+git branch -r: show remote branches.
+
+git branch -vv: give you local tracking branches.
+
+git checkout -b <branchname>: create a new branch.
+
+git push -u origin <branchname>: create a local tracking branch to track the remote branch you put in <branchname>.
 
 
+git branch --delete --remotes <branchname>: delete remote tracking branch.
 
+git push origin --delete <branchname>: delete remote branch. 
+
+if the remote branch is deleted, the remote tracking branch will also be deleted. 
