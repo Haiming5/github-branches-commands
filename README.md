@@ -5,4 +5,4 @@ Read command.txt for more information.
 
 ## Information About Merging 
 
-Read merge.txt for more information. 
+Read about-merging.txt for more information. 
