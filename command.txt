@@ -41,3 +41,8 @@ No new branch is made.
 
 git branch -D <branchname>: delete a branch even though it's not merged.
 
+
+git branch --track <branchname> origin/<branchname>: create local tracking branch
+
+
+
